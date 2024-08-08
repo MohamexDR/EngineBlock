@@ -1,3 +1,6 @@
+ESX = nil
+TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+
 RegisterServerEvent('blockEngine')
 AddEventHandler('blockEngine', function(targetId, vehicleNetId)
     local xPlayer = ESX.GetPlayerFromId(source)
